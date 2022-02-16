@@ -3,8 +3,17 @@ html{
     height: 100vh;
 }
 body{
-    background: radial-gradient(#0076ff 0%, #08fbff 100%);
     font-family: cursive;
+}
+.bg{
+  background: radial-gradient(#0076ff 0%, #08fbff 100%);
+  width: 60vw;
+  height: 97.52512155591572vh;
+  position:  absolute;
+  right: 20vw;
+  top: 48.762560778vh;
+  transform: translate(20%, -50%);
+  z-index: -10;
 }
 
 /*Player*/
@@ -15,22 +24,22 @@ body{
     top: 49.5vh;
     left: 50vw;
     transform: translate(-50%, -50%);
+    
 }
 .doge:active{
     width: 16vw;
 }
 .doge2{
     z-index: -1;
-    width: 20vw;
-    filter: blur(50px);
+    width: 25vw;
+    filter: blur(100px);
     position: absolute;
     top: 49.5vh;
     left: 50vw;
     transform: translate(-50%, -50%);
 }
-.doge2:active{
-    width: 25vw;
-}
+
+
 
 /*Dogecoin*/
 
@@ -42,10 +51,24 @@ body{
     font-size: 2.5vw;
 }
 
-/*Sections*/
-
-
-
+/*Upgrades*/
+.upgrades{
+  height: 97.52512155591572vh;
+  position:  absolute;
+  left: 0vw;
+  top: 48.762560778vh;
+  transform: translate(0%, -50%);
+  border-right: 10px solid black ;
+  padding-top: 0px;
+  width: 20vw;
+}
+.upgrades h1{
+  padding: 5px;
+  margin-top: 0px;
+  border-bottom: 10px solid black;
+  font-size: 2.5vw;
+  text-align: center;
+}
 /*Nav-Bar*/
 
 .nav-bar {
@@ -79,7 +102,7 @@ body{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 1.25vw;
+    font-size: var(--nav-height);
   }
   .nav-bar a:hover {
     background: #f1f1f1;

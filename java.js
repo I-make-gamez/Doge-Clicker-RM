@@ -1,5 +1,6 @@
 //Player DOM
 const doge = document.querySelector('.doge')
+const doge2 = document.querySelector('.doge2')
 const dc = document.querySelector('.dc')
 //Version DOM
 const ver = document.querySelector('.vers')
@@ -8,7 +9,7 @@ const ver = document.querySelector('.vers')
 var doco = 0;
 
 //Version Start
-var version = 'vb0.1.0'
+var version = 'vb0.20'
 var page = window
 
 page.onload = function(){
