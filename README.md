@@ -1,1 +1,1 @@
-# Doge-Clicker-RM
+# Doge-Clicker-Remastered
