@@ -65,10 +65,28 @@ body{
 }
 .upgrades h1{
   padding: 5px;
+  margin-bottom: 5px;
   margin-top: 0px;
   border-bottom: 10px solid black;
   font-size: 2.5vw;
   text-align: center;
+}
+
+.u1{
+  margin-top: 0px;
+
+  text-align: center;
+  border-bottom: 10px solid black;
+  background: radial-gradient(#3cff00 0%, #10bb1e 100%);
+}
+.u1 h2{
+  font-size: 1.95vw;
+}
+.u1 p{
+  font-size: 1.25vw;
+}
+.u1 h3{
+  font-size: 1.50vw;
 }
 /*powerups*/
 .powerups{
@@ -93,7 +111,7 @@ body{
 }
 /*Stats*/
 .stats{
-  height: 29.52512155591572vh;
+  height: 29vh;
   position:  absolute;
   right: 0vw;
   top: 72.762560778vh;
