@@ -5,6 +5,7 @@ const dc = document.querySelector('.dc')
 //Upgrade DOM
 const u1 = document.querySelector('.u1')
 const dfCost = document.querySelector('.dfCost')
+const clicpo = document.querySelector('.cpwr')
 //Version DOM
 const ver = document.querySelector('.vers')
 
@@ -14,7 +15,7 @@ var clipo = 1;
 var dfPrice = 100;
 
 //Version Start
-var version = 'vb0.31'
+var version = 'vb0.40'
 var page = window
 
 page.onload = function(){
@@ -32,11 +33,14 @@ doge.addEventListener('click', function(){
 
 u1.addEventListener('click', function(){
     if(doco >= dfPrice){
-        doco -= dfPrice;
-        dc.innerHTML = `DogeCoin: ${doco}`
-        dfprice += Math.round((dfPrice/100)*10)
-        dfCost.innerHTML = `Cost: ${dfPrice}DC`
         clipo += 1;
+        clicpo.innerHTML = `ClickPower: ${clipo}`
+        doco -= dfPrice;
+        dfPrice *= 2
+        dfCost.innerHTML = `Cost: ${dfPrice}DC`;
+        dc.innerHTML = `DogeCoin: ${doco}`
+        
+        
     }
 })
 
