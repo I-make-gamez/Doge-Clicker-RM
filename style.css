@@ -103,7 +103,7 @@ body{
 
   padding-top: 0px;
   width: 20vw;
-  background: radial-gradient(#ff0000 0%, #bb1010 100%);
+  background: radial-gradient(#f700ff 0%, #9910bb 100%);
 }
 .powerups h1{
   padding: 5px;
@@ -124,7 +124,7 @@ body{
   border-bottom: 10px solid black;
   padding-top: 0px;
   width: 20vw;
-  background: radial-gradient(#ff0000 0%, #bb1010 100%);
+  background: radial-gradient(#ffae00 0%, #bb8510 100%);
 }
 .stats h1{
   padding: 5px;

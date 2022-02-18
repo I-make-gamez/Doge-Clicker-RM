@@ -10,6 +10,8 @@ const clicpo = document.querySelector('.cpwr')
 const ver = document.querySelector('.vers')
 
 //MVVs
+var page = window
+var ask = page.prompt
 var doco = 0;
 var clipo = 1;
 var dfPrice = 100;
@@ -30,6 +32,10 @@ doge.addEventListener('click', function(){
     dc.innerHTML = `DogeCoin: ${doco}`
     anim()
 });
+
+let codes = [
+    1807, 
+];
 
 u1.addEventListener('click', function(){
     if(doco >= dfPrice){
@@ -57,8 +63,29 @@ function anim(){
 
 //Functions End
 
-/* 
-Snipets
+//Snipets
 
-
-*/
+document.onkeydown = function (e) {
+    var e = e || page.event;
+    if (e.ctrlKey && e.altKey && e.key === 'm') {
+        var coAns = ask('Enter Admin Code\nThen Command ID\nThen Value(if any)')
+        var coAns2 = coAns.split(" ")
+        if (coAns2[0] == codes[0]) {
+            switch (coAns2[1]) {
+                default: break;
+                case '1':
+                    var total = Math.floor(coAns2[2]);
+                    doco += total;
+                    dc.innerHTML = `DogeCoin: ${doco}`;
+                    //localStorage.setItem('totalDc', doco)
+                    break;
+                case '2':
+                    var total = Math.floor(coAns2[2]);
+                    clipo += total;
+                    clicpo.innerHTML = `Clickpower: ${clipo}`
+                    //localStorage.setItem('clickpower', clipo)
+                    break;
+            }
+        }
+    }
+};
