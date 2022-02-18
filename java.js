@@ -6,8 +6,12 @@ const dc = document.querySelector('.dc')
 const u1 = document.querySelector('.u1')
 const dfCost = document.querySelector('.dfCost')
 const clicpo = document.querySelector('.cpwr')
+//Powerup DOM
+const pu = document.querySelector('.powerups')
 //Version DOM
 const ver = document.querySelector('.vers')
+const cl = document.querySelector('.changelog')
+const ex = document.querySelector('.ex')
 
 //MVVs
 var page = window
@@ -23,6 +27,15 @@ var page = window
 page.onload = function(){
     ver.innerHTML = `Version: ${version}`
 }
+
+ver.addEventListener('click', function(){
+    cl.style.zIndex = 1
+    pu.style.opacity = 1;
+})
+ex.addEventListener('click', function(){
+    cl.style.zIndex = -2
+    pu.style.opacity = 1;
+})
 //Version End
 
 //EL Start
