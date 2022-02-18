@@ -9,7 +9,7 @@ const ver = document.querySelector('.vers')
 var doco = 0;
 
 //Version Start
-var version = 'vb0.20'
+var version = 'vb0.30'
 var page = window
 
 page.onload = function(){

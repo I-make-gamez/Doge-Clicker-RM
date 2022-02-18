@@ -10,7 +10,7 @@ body{
   width: 60vw;
   height: 97.52512155591572vh;
   position:  absolute;
-  right: 20vw;
+  right: 32vw;
   top: 48.762560778vh;
   transform: translate(20%, -50%);
   z-index: -10;
@@ -61,8 +61,52 @@ body{
   border-right: 10px solid black ;
   padding-top: 0px;
   width: 20vw;
+  background: radial-gradient(#ff0000 0%, #bb1010 100%);
 }
 .upgrades h1{
+  padding: 5px;
+  margin-top: 0px;
+  border-bottom: 10px solid black;
+  font-size: 2.5vw;
+  text-align: center;
+}
+/*powerups*/
+.powerups{
+  height: 57.52512155591572vh;
+  position:  absolute;
+  right: 0vw;
+  top: 28.762560778vh;
+  transform: translate(0%, -50%);
+  border-left: 10px solid black ;
+  border-bottom: 10px solid black ;
+
+  padding-top: 0px;
+  width: 20vw;
+  background: radial-gradient(#ff0000 0%, #bb1010 100%);
+}
+.powerups h1{
+  padding: 5px;
+  margin-top: 0px;
+  border-bottom: 10px solid black;
+  font-size: 2.5vw;
+  text-align: center;
+}
+/*Stats*/
+.stats{
+  height: 29.52512155591572vh;
+  position:  absolute;
+  right: 0vw;
+  top: 72.762560778vh;
+  transform: translate(0%, -50%);
+  border-left: 10px solid black ;
+  border-bottom: 10px solid black ;
+  z-index: -1;
+
+  padding-top: 0px;
+  width: 20vw;
+  background: radial-gradient(#ff0000 0%, #bb1010 100%);
+}
+.stats h1{
   padding: 5px;
   margin-top: 0px;
   border-bottom: 10px solid black;
