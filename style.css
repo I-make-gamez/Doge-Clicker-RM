@@ -62,22 +62,25 @@ body{
   padding-top: 0px;
   width: 20vw;
   background: radial-gradient(#ff0000 0%, #bb1010 100%);
+  margin: 0px;
+  padding: 0px;
 }
 .upgrades h1{
-  padding: 5px;
-  margin-bottom: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
   margin-top: 0px;
-  border-bottom: 10px solid black;
+  border-bottom: 0px solid black;
   font-size: 2.5vw;
   text-align: center;
 }
 
 .u1{
   margin-top: 0px;
-
+  margin-bottom: 0px;
   text-align: center;
   border-bottom: 10px solid black;
   background: radial-gradient(#3cff00 0%, #10bb1e 100%);
+  border-top: 10px solid;
 }
 .u1 h2{
   font-size: 1.95vw;
@@ -111,23 +114,23 @@ body{
 }
 /*Stats*/
 .stats{
-  height: 29vh;
+  height: 30vh;
   position:  absolute;
   right: 0vw;
-  top: 72.762560778vh;
+  top: 73.762560778vh;
   transform: translate(0%, -50%);
   border-left: 10px solid black ;
-  border-bottom: 10px solid black ;
   z-index: -1;
-
+  border-bottom: 10px solid black;
   padding-top: 0px;
   width: 20vw;
   background: radial-gradient(#ff0000 0%, #bb1010 100%);
 }
 .stats h1{
   padding: 5px;
-  margin-top: 0px;
-  border-bottom: 10px solid black;
+  padding-bottom: 0px;
+
+  margin: 0px;
   font-size: 2.5vw;
   text-align: center;
 }
