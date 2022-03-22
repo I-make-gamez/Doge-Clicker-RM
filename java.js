@@ -2,6 +2,7 @@
 const doge = document.querySelector('.doge')
 const doge2 = document.querySelector('.doge2')
 const dc = document.querySelector('.dc')
+const wbg = document.querySelector('.wbg')
 //Upgrade DOM
 const u1 = document.querySelector('.u1')
 const dfCost = document.querySelector('.dfCost')
@@ -21,11 +22,14 @@ var clipo = 1;
 var dfPrice = 100;
 
 //Version Start
-var version = 'vb0.40'
+var version = 'vb0.50'
 var page = window
 
 page.onload = function(){
     ver.innerHTML = `Version: ${version}`
+    let doco = Math.floor(localStorage.getItem('tdc'))
+    dc.innerHTML = `DogeCoin: ${doco}`
+
 }
 
 ver.addEventListener('click', function(){
@@ -42,6 +46,7 @@ ex.addEventListener('click', function(){
 
 doge.addEventListener('click', function(){
     doco += clipo;
+    localStorage.setItem('tdc', doco)
     dc.innerHTML = `DogeCoin: ${doco}`
     anim()
 });

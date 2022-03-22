@@ -16,6 +16,18 @@ body{
   z-index: -10;
 }
 
+.wbg{
+  background: radial-gradient(#0076ff 0%, #08fbff 100%);
+  width: 100vw;
+  height: 97.52512155591572vh;
+  position:  absolute;
+  right: 0;
+  top: 48.762560778vh;
+  transform: translate(0%, -50%);
+  z-index: -10;
+  overflow-y: hidden;
+}
+
 /*Player*/
 
 .doge{
